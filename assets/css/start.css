@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#start{
+    position: relative;
+    background-image: url('../img/backgroundStart.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 80%;
+    min-height: 100vh;
+}
+
+#audio-start{
+    display: none;
+}
