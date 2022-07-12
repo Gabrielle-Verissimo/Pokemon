@@ -1,2 +1,6 @@
-const audio = document.querySelector('#audio-start');
-console.log(audio);
+document.addEventListener('keyup', (e) => {
+    if(e.key === 'Enter'){
+        window.location = '../../game.html';
+        //console.log('funcionou');
+    }
+})

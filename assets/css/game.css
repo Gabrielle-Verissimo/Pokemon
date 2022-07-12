@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-#start{
+#game{
     position: relative;
     background-image: url('../img/background-start.jpg');
     background-size: cover;
@@ -12,8 +12,4 @@
     margin: 0 auto;
     width: 80%;
     min-height: 100vh;
-}
-
-#audio-start{
-    display: none;
 }
