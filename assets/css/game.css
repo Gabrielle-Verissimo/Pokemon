@@ -1,15 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@200&family=Chilanka&family=Josefin+Sans:wght@200&family=Ruluko&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#game{
+body{
+    background-color: black;
+}
+
+#game-board{
     position: relative;
-    background-image: url('../img/background-start.jpg');
+    background-image: url('../img/fundo-prof-carvalho.png');
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0 auto;
-    width: 80%;
+    /* border: solid 2px black; */
+    width: 70%;
     min-height: 100vh;
+    margin: auto;
 }
+
+#prof-carvalho{
+    position: absolute;
+    top: 28%;
+    left: 37%;
+    width: 270px;
+    height: 270px;
+}
+
+#prof-carvalho img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.balao-fala{
+    position: absolute;
+    background-image: url('../img/balao-fala.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 170px;
+    bottom: 5px;
+    left: 40px;
+}
+
+/* font-family: 'Arima', cursive; 2*/
+/* font-family: 'Chilanka', cursive; 1*/
+/* font-family: 'Josefin Sans', sans-serif; 2*/
+/* font-family: 'Ruluko', sans-serif; 1*/
+
+.balao-fala p{
+    position: relative;
+    top: 40px;
+    left: 70px;
+    font-size: 1.4rem;
+    font-family: 'Arima', cursive;
+    /* font-family: 'Chilanka', cursive; */
+    /* font-family: 'Josefin Sans', sans-serif; */
+    /* font-family: 'Ruluko', sans-serif; */
+    /* border: solid 1px; */
+    text-align:justify;
+    font-weight: bold;
+}
+
+/* .balao-fala img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
