@@ -55,7 +55,7 @@ body{
     position: relative;
     top: 40px;
     left: 70px;
-    font-size: 1.4rem;
+    font-size: 1.45rem;
     font-family: 'Arima', cursive;
     /* font-family: 'Chilanka', cursive; */
     /* font-family: 'Josefin Sans', sans-serif; */
@@ -63,6 +63,8 @@ body{
     /* border: solid 1px; */
     text-align:justify;
     font-weight: bold;
+    color: rgb(46, 45, 45);
+    width: 82%;
 }
 
 .btn-balao{
@@ -82,9 +84,32 @@ body{
     100% {bottom: 28px;}
 }
 
+.pokebola{
+    position: absolute;
+    background-image: url('../img/pokebola.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    top: 105px;
+    left: 50px;
+}
 
-/* .balao-fala img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
+.animation{
+    animation: pokebola-animation 1s linear 0.2s 1;
+}
+
+@keyframes pokebola-animation{
+    0% {background-image: url('../img/pokebola.png');}
+    5% {top: 100px;}
+    10% {top: 90px;}
+    20% {top: 80px;}
+    30% {top: 70px;}
+    40% {top: 60px;}
+    50% {top: 50px;}
+    60% {top: 40px;}
+    70% {top: 30px;}
+
+    /* 50% {background-image: url('../img/pokebola-meio-aberta.png');}
+    100% {background-image: url('../img/nidoran.png');} */
+}
