@@ -9,16 +9,21 @@
 body{
     background-color: black;
 }
-
 #game-board{
+    display: block;
     position: relative;
+    /* position: absolute;
     background-image: url('../img/fundo-prof-carvalho.png');
     background-size: cover;
     background-repeat: no-repeat;
+    margin: auto; */
     /* border: solid 2px black; */
-    width: 70%;
-    min-height: 100vh;
+    /* width: 70%;
+    min-height: 100vh; */
+    /* margin-left: auto; */
+    top: 25px;
     margin: auto;
+    border: solid 1px white;
 }
 
 #prof-carvalho{
