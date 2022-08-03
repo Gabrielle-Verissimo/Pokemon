@@ -2,11 +2,13 @@ import { scripts } from "./script.js";
 
 
 window.onload = function() {
-    let c = document.querySelector("#game-board");
+    let c = document.querySelector("canvas");
     let ctx = c.getContext("2d");
-    let img = new Image();
-    img.src = 'fundo-prof-carvalho.png';
-    ctx.drawImage(img, 0, 600, img.width, img.height);
+    let scene = new Image();
+    scene.src = './assets/img/fundo-prof-carvalho.png';
+    //ctx.drawImage(scene,0,0,scene.width,scene.height,0,0,scene.width,scene.height);
+    scene.onload = () => ctx.drawImage(scene, 0, 0, scene.width, scene.height);
+
 };
 
 // const fala = document.querySelector('.balao-fala > p');
